@@ -38,7 +38,7 @@ Ensure you have the following software installed on your system before proceedin
 
 1. Clone the repository:
 
-```git clone https://github.com/awokou/micro-services.git```
+```git clone https://github.com/awokou/microservices-project.git```
 
 2. Navigate to the project directory:
 3. Build and package each component with Maven:
