@@ -14,19 +14,11 @@ export class StudentService {
         return this.http.get<Student[]>('/api/students');
     }
 
-    getBySchoolId(schoolId: number): Observable<Student> {
-        return this.http.get<Student>('/api/students/school/' + schoolId);
+    getBySchoolId(schoolId: number): Observable<Student[]> {
+        return this.http.get<Student[]>('/api/students/school/' + schoolId);
     }
 
-    create(student: Student): Observable<Student> {
+    createStudent(student: Student): Observable<Student> {
         return this.http.post<Student>('/api/students', student);
-    }
-
-    update(student: Student): Observable<Student> {
-        return this.http.post<Student>('/api/students', student);
-    }
-
-    delete(id: number): Observable<any> {
-        return this.http.delete<any>('/api/students' + id);
     }
 }

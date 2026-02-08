@@ -1,9 +1,10 @@
 package com.service.school.service.client;
 
-import com.service.school.service.dto.StudentDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+
+import com.server.common.lib.dto.StudentDto;
 
 import java.util.List;
 

@@ -21,14 +21,26 @@ spring:
               enabled: true
               lower-case-service-id: true
           routes:
-            - id: STUDENT-SERVICE
-              uri: lb://STUDENT-SERVICE
+            - id: student-service
+              uri: lb://student-service
               predicates:
-                - Path=/api/students/**
-            - id: SCHOOL-SERVICE
-              uri: lb://SCHOOL-SERVICE
+                - Path=/api/students/**,/student-service/v3/api-docs
+           
+            - id: school-service
+              uri: lb://school-service
               predicates:
-                - Path=/api/schools/**
+                - Path=/api/schools/**,/school-service/v3/api-docs
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+    urls:
+      - name: Student Service
+        url: /student-service/v3/api-docs
+      - name: School Service
+        url: /school-service/v3/api-docs
 
 management:
   endpoints:
@@ -38,3 +50,8 @@ management:
   endpoint:
     health:
       show-details: always
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    reactor.netty.http.client: DEBUG

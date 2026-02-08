@@ -12,8 +12,8 @@ public class StudentMapper {
 
         Student student = new Student();
         student.setId(dto.getId());
-        student.setFirstname(dto.getFirstname());
-        student.setLastname(dto.getLastname());
+        student.setFirstName(dto.getFirstName());
+        student.setLastName(dto.getLastName());
         student.setEmail(dto.getEmail());
         student.setSchoolId(dto.getSchoolId());
 
@@ -25,8 +25,8 @@ public class StudentMapper {
 
         StudentDto dto = new StudentDto();
         dto.setId(entity.getId());
-        dto.setFirstname(entity.getFirstname());
-        dto.setLastname(entity.getLastname());
+        dto.setFirstName(entity.getFirstName());
+        dto.setLastName(entity.getLastName());
         dto.setEmail(entity.getEmail());
         dto.setSchoolId(entity.getSchoolId());
 

@@ -4,6 +4,8 @@ import lombok.*;
 
 import java.util.List;
 
+import com.server.common.lib.dto.StudentDto;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

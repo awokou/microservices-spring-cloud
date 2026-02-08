@@ -28,8 +28,8 @@ public class StudentServiceImpl implements StudentService {
     public Student saveStudent(StudentDto student) {
         log.info("Demarrager");
         Student studentEntity = new Student();
-        studentEntity.setFirstname(student.getFirstname());
-        studentEntity.setLastname(student.getLastname());
+        studentEntity.setFirstName(student.getFirstName());
+        studentEntity.setLastName(student.getLastName());
         studentEntity.setEmail(student.getEmail());
         studentEntity.setSchoolId(student.getSchoolId());
 
@@ -49,8 +49,8 @@ public class StudentServiceImpl implements StudentService {
                 .stream()
                 .map(student -> new StudentDto(
                         student.getId(),
-                        student.getFirstname(),
-                        student.getLastname(),
+                        student.getFirstName(),
+                        student.getLastName(),
                         student.getEmail(),
                         student.getSchoolId()))
                 .toList();
@@ -62,8 +62,8 @@ public class StudentServiceImpl implements StudentService {
                 .stream()
                 .map(student -> new StudentDto(
                         student.getId(),
-                        student.getFirstname(),
-                        student.getLastname(),
+                        student.getFirstName(),
+                        student.getLastName(),
                         student.getEmail(),
                         student.getSchoolId()))
                 .toList();

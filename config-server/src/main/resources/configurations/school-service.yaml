@@ -21,7 +21,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: none
-    show-sql: false
+    show-sql: true
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
@@ -30,7 +30,12 @@ students:
   service:
      url: http://localhost:8081/api/students
 
-
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    
 management:
   endpoints:
     web:

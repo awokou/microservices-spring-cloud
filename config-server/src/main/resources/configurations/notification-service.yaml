@@ -17,7 +17,7 @@ spring:
   
   mail:
     host: localhost
-    port: 65
+    port: 587
     username: test
     password: test
     properties:

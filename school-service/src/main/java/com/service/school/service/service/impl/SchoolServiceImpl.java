@@ -1,9 +1,9 @@
 package com.service.school.service.service.impl;
 
+import com.server.common.lib.dto.StudentDto;
 import com.service.school.service.client.StudentClient;
 import com.service.school.service.dto.SchoolDto;
 import com.service.school.service.dto.SchoolResponse;
-import com.service.school.service.dto.StudentDto;
 import com.service.school.service.entity.School;
 import com.service.school.service.repository.SchoolRepository;
 import com.service.school.service.service.SchoolService;
