@@ -1,12 +1,9 @@
-# Microservices Project
+# Spring Microservices V2
 
 This repository contains a demo project showcasing a microservices-based application, designed to provide a hands-on understanding of microservices architecture and implementation. The project consists of an API Gateway, Config Server, Discovery Server, and two microservices: Student and School.
 
 ## Table of Contents
 
-- [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
 - [Project Components](#project-components)
     - [API Gateway](#api-gateway)
     - [Config Server](#config-server)
@@ -15,8 +12,6 @@ This repository contains a demo project showcasing a microservices-based applica
     - [School Microservice](#school-microservice)
 - [Inter-Service Communication](#inter-service-communication)
     - [Using OpenFeign](#using-openfeign)
-- [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
 
 ## Getting Started
 
@@ -34,7 +29,7 @@ Ensure you have the following software installed on your system before proceedin
 
 1. Clone the repository:
 
-```git clone https://github.com/awokou/microservices-project.git```
+```git clone https://github.com/awokou/spring-microservices-v2.git```
 
 2. Navigate to the project directory:
 3. Build and package each component with Maven:
