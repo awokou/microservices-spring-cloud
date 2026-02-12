@@ -15,14 +15,16 @@ public class NotificationService {
 
     private final NotificationRepository notificationRepository;
 
-    public void save(SendNotificationDto request) {
-        var notification = Notification.builder()
+    public Notification save(SendNotificationDto request) {
+
+        Notification notification = Notification.builder()
                 .id(UUID.randomUUID().toString())
                 .userId(request.getUserId())
                 .offerId(request.getOfferId())
                 .message(request.getMessage())
                 .build();
-        notificationRepository.save(notification);
+
+        return notificationRepository.save(notification);
     }
 
     public List<Notification> getAllByUserId(String id) {

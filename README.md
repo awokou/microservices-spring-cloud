@@ -10,6 +10,7 @@ This repository contains a demo project showcasing a microservices-based applica
     - [Discovery Server](#discovery-server)
     - [Student Microservice](#student-microservice)
     - [School Microservice](#school-microservice)
+    - [User Microservice](#user-microservice)
 - [Inter-Service Communication](#inter-service-communication)
     - [Using OpenFeign](#using-openfeign)
 - [Project Frontend](#frontend-project)
@@ -57,6 +58,8 @@ The Student Microservice is responsible for managing student-related data and op
 ### School Microservice
 
 The School Microservice manages school-related data and operations, including adding, updating, and retrieving school records.
+
+### User Microservice
 
 ## Inter-Service Communication
 
